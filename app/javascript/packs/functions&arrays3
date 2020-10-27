@@ -1,0 +1,47 @@
+#include<iostream>
+void Input_fun(int [],const int &);
+void Output_fun(int [],const int &);
+using namespace std;
+
+int main()
+{
+	const int SIZE = 5;
+	int Nums[SIZE];
+    Input_fun(Nums,SIZE);
+    Output_fun( Nums, SIZE);
+    
+	Input_validation(    );  // accepts ints between 0 and 100
+    Find_Largest(  );   //  finds the largest element in the array and returns it back to main
+    Find_Smallest( );  //  finds the largest element in the array and returns it back to main
+  // modify the ouput function to receive the largest and smallest elments and displays them along with all array members 
+ return 0;
+}
+
+// input (populating the array)	
+
+void Input_fun(int Ns[],const int &S)
+{
+
+	for(int i = 0; i< S; i++)
+	   {
+	   	cout<<" enter a value"<<endl;
+	   	cin>>Ns[i];
+	   	
+	   }
+}
+// output (displaying the array members
+void Output_fun(int Nss[],const int &SS)
+{
+
+	for(int i = 0; i< SS; i++)
+	   {
+	   	
+	   	cout<<Nss[i]<<endl;
+	   	
+	   }	   
+	   	
+	
+}
+
+
+
